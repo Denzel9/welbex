@@ -1,0 +1,18 @@
+.yellow {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: -66px;
+  top: 519px;
+  display: none;
+  background: #fcb045;
+  opacity: 0.4;
+  filter: blur(196px);
+  border-radius: 100%;
+}
+
+@media (max-width: 320px) {
+  .yellow {
+    display: block;
+  }
+}

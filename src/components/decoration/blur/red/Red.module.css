@@ -1,0 +1,20 @@
+.red {
+  position: absolute;
+  width: 311px;
+  height: 311px;
+  left: -109px;
+  top: 251px;
+
+  background: #961a1a;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+@media (max-width: 320px) {
+  .red {
+    width: 211px;
+    height: 210px;
+    left: -55px;
+    top: 241px;
+  }
+}

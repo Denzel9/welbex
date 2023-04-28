@@ -1,0 +1,18 @@
+.purple {
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  left: 602px;
+  top: -154px;
+  border-radius: 100%;
+  background-color: #833ab4;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+@media (max-width: 320px) {
+  .purple {
+    left: 258px;
+    top: 107px;
+  }
+}

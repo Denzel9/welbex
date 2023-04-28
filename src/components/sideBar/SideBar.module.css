@@ -1,0 +1,96 @@
+.sideBar {
+  width: 330px;
+  font-family: "Inter", sans-serif;
+  color: #e4e5ea;
+}
+.sideBarList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-left: 0;
+  margin: 0;
+}
+.item {
+  text-align: right;
+  list-style-type: none;
+}
+.item h4 {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin: 40px 0 6px;
+  line-height: 22px;
+}
+.item span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  display: block;
+  line-height: 20px;
+  width: 164px;
+}
+.title {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+  text-align: right;
+  margin: 10px 0 0;
+}
+.title span {
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.btn {
+  width: 262px;
+  height: 61px;
+  background-color: #4077f3;
+  color: #e4e5ea;
+  border: none;
+  float: right;
+  margin-top: 61px;
+  cursor: pointer;
+}
+
+@media (max-width: 320px) {
+  .sideBar {
+    width: 288px;
+  }
+  .title {
+    line-height: 22px;
+    text-align: left;
+    margin-top: 45px;
+  }
+  .item {
+    text-align: left;
+    position: relative;
+  }
+  .item h4 {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    line-height: 16px;
+  }
+  .item h4::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 10px;
+    top: 46px;
+    left: -21px;
+    background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%);
+  }
+  .item span {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .sideBarList {
+    padding-left: 26px;
+    margin-bottom: 40px;
+  }
+}
